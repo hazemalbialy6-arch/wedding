@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Ahmed & Haneen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شاشة الترحيب الافتتاحية -->
+    <div id="welcome-screen" class="welcome-container">
+        <div class="card-content">
+            <div class="top-ornament">✦</div>
+            <h1 class="main-title">WELCOME TO OUR wedding</h1>
+            <div class="names-wrapper">
+                <span class="couple-name freehand-text">Ahmed</span>
+                <span class="ampersand">&</span>
+                <span class="couple-name freehand-text">Haneen</span>
+            </div>
+            <p class="appreciation-text">
+                With hearts full of love and gratitude, we invite you to share our joy and celebrate the beginning of our beautiful forever together.
+            </p>
+            <button id="open-btn" class="open-button">OPEN</button>
+            <div class="bottom-ornament">✦</div>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي للدعوة -->
+    <div id="main-invitation" class="main-content hidden">
+        
+        <section class="section welcome-section">
+            <p class="section-subtitle-top">WELCOME TO OUR WEDDING</p>
+            
+            <div class="royal-names-frame">
+                <div class="frame-internal-content">
+                    <h2 class="freehand-title">Ahmed</h2>
+                    <span class="gold-and">&</span>
+                    <h2 class="freehand-title">Haneen</h2>
+                </div>
+                <img src="assets/floral-corner-border.png" alt="Floral Corner Border" class="corner-border-bottom-right">
+                <img src="assets/34343.png" alt="Floral Corner Border Top Left" class="corner-border-top-left">
+            </div>
+
+            <div class="ceremony-info-box">
+                <h3 class="section-title-gold">CEREMONY INFO</h3>
+                <p class="invitation-text-paragraph">
+                    We, Ahmed & Haneen, invite you to share in our joy and celebrate our love as we exchange our wedding vows.
+                </p>
+                <p class="invitation-text-paragraph font-weight-medium">
+                    Your presence and blessings mean the world to us as we begin this beautiful new chapter together.
+                </p>
+            </div>
+
+            <div class="full-names-container">
+                <div class="name-block">
+                    <span class="full-name">Ahmed Zakaria</span>
+                    <span class="role-title">GROOM</span>
+                </div>
+                <span class="gold-and-small">&</span>
+                <div class="name-block">
+                    <span class="full-name">Haneen Hussain</span>
+                    <span class="role-title">BRIDE</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section album-section">
+            <h3 class="section-title-gold">WEDDING ALBUM</h3>
+            <div class="image-frame-holder">
+                <img src="assets/couple.jpg" alt="Ahmed and Haneen" class="couple-wedding-img">
+            </div>
+        </section>
+
+        <section class="section reception-info-section">
+            <!-- حاوية توقيت الحفل المحاطة بالأعمدة الرومانية بدقة -->
+            <div class="reception-timing-wrapper">
+                <!-- الأعمدة الرومانية تبدأ وتنتهي حول الموعد فقط وقبل الـ countdown -->
+                <img src="assets/greek-column.png" alt="Greek Column Left" class="greek-pillar pillar-left">
+                <img src="assets/greek-column.png" alt="Greek Column Right" class="greek-pillar pillar-right">
+
+                <h3 class="section-title-gold">RECEPTION INFO</h3>
+                <p class="reception-sub">THE RECEPTION WILL TAKE PLACE AT:</p>
+                <div class="main-time-display">04:00 - 07:00</div>
+
+                <div class="date-row-display">
+                    <span class="date-element">FRIDAY</span>
+                    <span class="date-divider">|</span>
+                    <span class="date-element highlight-day">07</span>
+                    <span class="date-divider">|</span>
+                    <span class="date-element">AUGUST</span>
+                </div>
+                <div class="main-year-display">2026</div>
+
+                <div class="detailed-timing-grid">
+                    <div class="timing-box">
+                        <span class="time-label">WELCOME</span>
+                        <span class="time-value">03:30 PM</span>
+                    </div>
+                    <div class="timing-box">
+                        <span class="time-label">RECEPTION</span>
+                        <span class="time-value">04:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="venue-details-container">
+    <h4 class="venue-name-title">Diva Hall</h4>
+    <p class="venue-address-sub">Dar Al-Mudaraat, Salah Salem Road, Cairo, Egypt</p>
+    
+    <div class="map-iframe-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.6818798537015!2d31.308391599999997!3d30.0746519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e4ac7f989d1%3A0x99bb199a31583c34!2sArmor%20Officers%20House!5e0!3m2!1sen!2seg!4v1783456320408!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+</div>
+
+            <!-- قسم العداد التنازلي يقع خارج نطاق الأعمدة الرومانية تماماً سفلياً -->
+            <div class="countdown-container">
+                <h4 class="section-title-gold small-gold">COUNTDOWN</h4>
+                <div id="countdown-timer" class="timer-display-string">Calculating time left...</div>
+            </div>
+
+          <!-- 4. إطار الكاليندر الملكي الكلاسيكي بالزوايا المزخرفة -->
+<section class="section">
+    <div class="calendar-vintage-frame">
+        <!-- الزوايا المزخرفة الأربعة الناتجة من الصورة -->
+        <div class="corner-ornament top-left"></div>
+        <div class="corner-ornament top-right"></div>
+        <div class="corner-ornament bottom-left"></div>
+        <div class="corner-ornament bottom-right"></div>
+
+        <!-- المحتوى الداخلي للكاليندر -->
+        <div class="calendar-internal-content">
+            <h3 class="calendar-month-header">August 2026</h3>
+            <div class="calendar-grid">
+                <!-- أيام الأسبوع -->
+                <div class="day-head">Mo</div>
+                <div class="day-head">Tu</div>
+                <div class="day-head">We</div>
+                <div class="day-head">Th</div>
+                <div class="day-head">Fr</div>
+                <div class="day-head">Sa</div>
+                <div class="day-head">Su</div>
+
+                <!-- توزيع الأيام الفعلي لشهر أغسطس 2026 -->
+                <div class="day-num"></div><div class="day-num"></div><div class="day-num"></div><div class="day-num"></div><div class="day-num"></div>
+                <div class="day-num">1</div><div class="day-num">2</div>
+
+                <div class="day-num">3</div><div class="day-num">4</div><div class="day-num">5</div><div class="day-num">6</div>
+                <!-- يوم 7 أغسطس محاط بالقلب البني المظلل المستقر هندسياً تماماً كالصورة -->
+                <div class="day-num wedding-day-heart"><span>7</span></div>
+                <div class="day-num">8</div><div class="day-num">9</div>
+
+                <div class="day-num">10</div><div class="day-num">11</div><div class="day-num">12</div><div class="day-num">13</div><div class="day-num">14</div><div class="day-num">15</div><div class="day-num">16</div>
+                <div class="day-num">17</div><div class="day-num">18</div><div class="day-num">19</div><div class="day-num">20</div><div class="day-num">21</div><div class="day-num">22</div><div class="day-num">23</div>
+                <div class="day-num">24</div><div class="day-num">25</div><div class="day-num">26</div><div class="day-num">27</div><div class="day-num">28</div><div class="day-num">29</div><div class="day-num">30</div>
+                <div class="day-num">31</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="add-to-calendar-wrapper">
+        <a href="#" class="add-to-calendar-link">Add to Calendar</a>
+    </div>
+    
+   <button class="confirm-wedding-button" onclick="confirmAttendance()">CONFIRM ATTENDANCE</button>
+</section>
+
+        <section class="section guestbook-section">
+            <h3 class="section-title-gold">GUESTBOOK</h3>
+            <div class="guestbook-card-frame">
+                <form id="wishes-form" class="wishes-input-form">
+                    <input type="text" id="guest-name" placeholder="Enter your name*" required class="guestbook-field">
+                    <textarea id="guest-wish" rows="4" placeholder="Enter your wishes*" required class="guestbook-field"></textarea>
+                    <button type="submit" class="send-wishes-btn">SEND WISHES</button>
+                </form>
+                <div id="wishes-display-area" class="wishes-live-list"></div>
+            </div>
+        </section>
+<div class="attendance-counter-wrapper">
+    <span class="counter-label">TOTAL ATTENDING:</span>
+    <span class="counter-number" id="globalAttendanceCounter">0</span>
+</div>
+        <footer class="wedding-footer">
+            <p>Thank You For Celebrating With Us</p>
+            <div class="footer-ornament">✦ Ahmed & Haneen 2026 ✦</div>
+        </footer>
+    </div>
+
+    <audio id="wedding-music" src="assets/wedding-song.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
